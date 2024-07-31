@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+        <script src="./car.js"></script>
+        <script src="./base.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="car" src="./gol_quadrado_-_low_poly/scene.gltf"></a-asset-item>
+            </a-assets>
+            <a-camera position="0 3 0"></a-camera>
+            <a-entity position="0 0 -19" rotation="0 90 0" gltf-model="#car" car></a-entity>
+            <a-entity position="0 -0.5 -15" base></a-entity>
+        </a-scene>
+    </body>
+</html>
